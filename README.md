@@ -2,5 +2,13 @@ Kiana Harkema
 kiana.harkema@colorado.edu
 CSCI 3753 Spring 2020
 
-cs3753_add.c: Contains the system call definition to add two integers. Takes in two integers, a pointer to a memory address in user space, and returns the sum.
+arch/x86/kernel/cs3753_add.c: Contains the system call definition to add two integers. Takes in two integers, a pointer to a memory address in user space, and returns the sum.
+
+arch/x86/kernel/Makefile: Created custom objects definitions here for helloworld and cs3753_add
+
+arch/x86/entry/entry/syscalls/syscall_64.tbl: Helloworld and cs3753_add entires added here
+
+include/linux/syscalls.h: Function definitions located here
+
+/var/log/syslog: Logs of successful runs of hellworld and cs3753_add (displays results of addition)
 
